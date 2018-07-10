@@ -10,9 +10,23 @@ namespace Workflow
     {
         static void Main(string[] args)
         {
-            /*
-             * Start up list of applications given in the specified file: "StartupApps.json"
-             */
+            DebugHandler dbHandler = new DebugHandler();
+            if (!dbHandler.Validated)
+            {
+                Console.WriteLine(StringConstants.CONSOLE_MSG_DBG_NOTVALIDATED);
+            }
+
+            // Get default Application Starter .json file
+            string appStarterFile = ApplicationStarter.getDefaultAppStarterPath();
+            if (String.IsNullOrEmpty(appStarterFile))
+            {
+                //TODO: Will retrieve Google Docs .json file. To implement later.
+            }
+            else
+            {
+                ApplicationStarter _appStarter = new ApplicationStarter(appStarterFile, dbHandler);
+            }
+            Console.ReadKey();
         }
     }
 }
