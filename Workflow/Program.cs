@@ -27,7 +27,6 @@ namespace Workflow
                 ApplicationStarter _appStarter = new ApplicationStarter(appStarterFile, dbHandler);
                 _appStarter.Start();
             }
-            Console.ReadKey();
         }
     }
 }

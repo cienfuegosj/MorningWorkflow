@@ -80,6 +80,7 @@ namespace Workflow {
                         try
                         {
                             Process.Start(PathToExecutable);
+                            dbH.write(String.Format(StringConstants.STRING_SUCCESS_ON_PROCESS_START, str_app));
                         }
                         catch (Exception)
                         {

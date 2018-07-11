@@ -15,8 +15,9 @@ namespace Workflow
         public const string STRING_DEFAULT_STARTUP_APP_JSON_FILE_NAME = "startupapps.json";
         public const string STRING_MORNING_WKFLOW_FOLDER_NAME = "Morning Workflow";
         public const string STRING_META_DEBUG_FOLDER_EV = "WORKFLOW_META";
-        public const string STRING_ERROR_ON_PROCESS_START = "An error occurred while trying to start the application.";
+        public const string STRING_ERROR_ON_PROCESS_START = "An error occurred while trying to start the application.\n";
         public const string STRING_STARTUP_JSON_FILE_NOTEXIST = "The start-up application .json given does not exist.\n";
+        public const string STRING_SUCCESS_ON_PROCESS_START = "The start up application, {0}, was successfully launched.\n";
 
         // Any CONSOLE prepended constant string cannot end in a new line character.
         public const string CONSOLE_MSG_TEMP_META_DEBUG = "An error occurred while trying to create specified WORKFLOW_META folder: \n\tError:\t{0}\n\tCreating temp folder at and setting environment variable:\t{1}";
