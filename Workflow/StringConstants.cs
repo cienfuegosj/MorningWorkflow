@@ -15,6 +15,7 @@ namespace Workflow
         public const string STRING_DEFAULT_STARTUP_APP_JSON_FILE_NAME = "startupapps.json";
         public const string STRING_MORNING_WKFLOW_FOLDER_NAME = "Morning Workflow";
         public const string STRING_META_DEBUG_FOLDER_EV = "WORKFLOW_META";
+        public const string STRING_ERROR_ON_PROCESS_START = "An error occurred while trying to start the application.";
         public const string STRING_STARTUP_JSON_FILE_NOTEXIST = "The start-up application .json given does not exist.\n";
 
         // Any CONSOLE prepended constant string cannot end in a new line character.
@@ -23,5 +24,10 @@ namespace Workflow
         public const string CONSOLE_NO_META_DEBUG_FOLDER_EV = "The WORKFLOW_META environment variable was not set up.\nCreating or validating folder at:\n\t{0}";
         public const string CONSOLE_ERROR_ON_WRITE = "An error occurred when trying to write to the debug file.\nError:\n\t{0}";
         public const string CONSOLE_ERROR_ON_DESERIALIZE = "An error occurred when trying to deserialize the .json file. Error:\n\t{0}";
+        public const string CONSOLE_ERROR_ON_PROCESS_START = "An error occurred while trying to start the application.";
+
+        // Application Names
+        public const string STRING_APP_NAME_OUTLOOK = "Outlook";
+        public const string STRING_APP_NAME_JABBER = "Jabber";
     }
 }
